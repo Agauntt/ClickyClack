@@ -1,0 +1,75 @@
+[
+    {
+        "id": 1,
+        "name": "Fry",
+        "image": "images/Fry.png",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "Amy",
+        "image": "images/Amy.png",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "Bender",
+        "image": "images/Bender.png",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "Farnsworth",
+        "image": "images/Farnsworth.png",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "Hermes",
+        "image": "images/Hermes.png",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Kif",
+        "image": "images/Kif.png",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "Leela",
+        "image": "images/Leela.png",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Lrrr",
+        "image": "images/Lrrr.png",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "Nibbler",
+        "image": "images/Nibbler.png",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "TinnyTim",
+        "image": "images/TinnyTim.png",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "Zapp",
+        "image": "images/Zapp.png",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "Zoidberg",
+        "clicked": false,
+        "image": "images/Zoidberg.png",
+        "clicked": false
+    }
+]
