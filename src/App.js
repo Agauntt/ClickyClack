@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import cards from "./cards.json";
 import Nav from "./components/Nav/Nav";
-import "./App.css";
 import Wrapper from "./components/Wrapper/Wrapper.js";
 import Card from "./components/Card/Cards";
+import "./App.css";
 
 class App extends Component {
   state = {
