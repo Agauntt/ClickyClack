@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import cards from "./cards.json";
-import Nav from "./components/Nav";
+import Nav from "./components/Nav/Nav";
 import "./App.css";
 import Wrapper from "./components/Wrapper/Wrapper.js";
 import Card from "./components/Card/Cards";
@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     cards,
     clicked: [0],
-    headingMsg: "Click a card to begin the game!",
+    headingMsg: "Click a card to begin!",
     currentScore: 0,
     topscore: 0
   };
@@ -17,7 +17,8 @@ class App extends Component {
   correct = () => {
     const newScore = this.state.clicked.length;
     this.setState({
-      currentScore: newScore
+      currentScore: newScore,
+      headingMsg: "Correct!"
     });
     if (this.state.currentScore === 11) {
       this.setState({

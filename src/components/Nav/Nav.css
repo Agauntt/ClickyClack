@@ -1,0 +1,15 @@
+.heading {
+  align-content: center !important;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+@media only screen and (max-width: 500px) {
+  .heading {
+    width: 100%;
+    margin-left: 0px;
+  }
+}

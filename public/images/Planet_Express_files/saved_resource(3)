@@ -1,0 +1,31 @@
+
+var ftGUID_3623606="3859176084E12B";
+var ftConfID_3623606="13891849";
+var ftParams_3623606="ftx=&fty=&ftadz=&ftscw=&ft_custom=1781800_22311692_240526630&ftOBA=1&ft_agentEnv=0&ft_referrer=https%3A%2F%2Fwww.btserve.com%2Frender%3FifrId%3D5b2d1649b2-188-1%26code%3D5b2d1649b2-188%26t%3Dbidt-sra&cachebuster=926870.7286706071";
+var ftKeyword_3623606="";
+var ftCustom_3623606="1781800_22311692_240526630";
+var ftSection_3623606="";
+var ftSegment_3623606="uip,vmh1,tg1,v972,v95,wb7,wbu,vye2,vyg,w2c,n7h";
+var ftSegmentList_3623606=[{s:'uip'},{m:'c7068_conditional',s:'vmh1'},{s:'tg1'},{m:'c7068_platform',s:'v972'},{s:'v95'},{s:'wb7'},{s:'wbu'},{m:'c7068_gamepass',s:'vye2'},{s:'vyg'},{s:'w2c'},{s:'n7h'}];
+var ftRuleMatch_3623606="0";
+var ftTimestamp_3623606="1557550539";
+var ftGeoC2_3623606="us";
+var ftGeoState_3623606="tx";
+var ftGeoCity_3623606="georgetown";
+var ftISP_3623606="suddenlink communications";
+var ftSpeed_3623606="cable";
+var ftDMA_3623606="635";
+var ftLong_3623606="-97.6556";
+var ftLat_3623606="30.7539";
+var ftPostal_3623606="78633";
+var ftTimeZone_3623606="-500";
+var ftMobileCarrier_3623606="";
+var ftImp3623606 = {};
+ftImp3623606.privacy = "x";
+ftImp3623606.guidAge = "289";
+ftImp3623606.impID = "3ED50183-A511-D6DE-6B42-43FF9AA56E3A";
+ftImp3623606.duid = "FT:3859176084E12B";
+ftImp3623606.ft_tpplid = "";
+ftImp3623606.ft_c = {};
+
+document.write('<scr'+'ipt src="https://cdn.flashtalking.com/xre/362/3623606/2516747/js/j-3623606-2516747.js" id="ftscript_m3623606" name="ftscript_m3623606"></scr'+'ipt>');

@@ -1,0 +1,61 @@
+var _tl = new TimelineMax(),
+    po2 = Power2.easeOut,
+    pi1 = Power1.easeIn,
+    pi2 = Power2.easeIn,
+    custom = CustomEase.create("custom", "M0,0 C0.01,0.156 0.094,0.36 0.3,0.4 0.545,0.447 0.438,0.424 0.56,0.442 0.595,0.447 0.55,0.862 1,1"),
+_loadedImages=0,
+_imageArray=new Array('bg.jpg','polaroid_baby.jpg','polaroid_wedding.jpg','polaroid_graduation.jpg','copy1.svg','copy2.svg','copy3.svg','copy4.svg','copy_cta.svg','logo.svg','shimmer.png');
+
+
+this.addEventListener('DOMContentLoaded', preloadImages);
+
+function preloadImages() {
+    for (var i = 0; i < _imageArray.length; i++) {
+        var _tempImage = new Image();
+        _tempImage.addEventListener('load', trackProgress);
+        _tempImage.src = _imageArray[i];
+    }
+}
+
+function trackProgress(){
+    _loadedImages++;             
+    if(_loadedImages == _imageArray.length) init();
+}
+
+function init(){ 
+    var css = document.createElement( 'link' );
+    css.setAttribute( 'rel', 'stylesheet' );
+    css.setAttribute( 'type', 'text/css' );
+    css.setAttribute( 'href', "style.css" );
+    document.getElementsByTagName('head')[0].appendChild(css);
+
+    initAnimations();
+}
+
+function initAnimations(){
+    _tl
+
+    .to('#copy1', .3, {opacity:1, ease:pi2}, '+=.5')
+    .to('#copy1', .3, {opacity:0, ease:po2}, '+=1.5')
+    .to('#img1', 3.5, {top:330,force3D:true, transformPerspective:1000, transformStyle:"preserve-3d", ease:custom}, '-=.5')
+    .to('#img1', 2, {rotation:-10,force3D:true, transformPerspective:1000, transformStyle:"preserve-3d", ease:po2}, '-=3.5')
+
+    .to('#copy2', .3, {opacity:1, ease:pi2}, '-=1.5')
+    .to('#copy2', .3, {opacity:0, ease:po2}, '+=1.5')
+    .to('#img2', 3.5, {top:330,force3D:true, transformPerspective:1000, transformStyle:"preserve-3d", ease:custom}, '-=.5')
+    .to('#img2', 2, {rotation:10,force3D:true, transformPerspective:1000, transformStyle:"preserve-3d", ease:po2}, '-=3.5')
+
+    .to('#copy3', .3, {opacity:1, ease:pi2}, '-=1.5')
+    .to('#copy3', .3, {opacity:0, ease:po2}, '+=1.5')
+    .to('#img3', 3.5, {top:330,force3D:true, transformPerspective:1000, transformStyle:"preserve-3d", ease:custom}, '-=.5')
+    .to('#img3', 2, {rotation:-10,force3D:true, transformPerspective:1000, transformStyle:"preserve-3d", ease:po2}, '-=3.5')
+
+    .to('#copy4', .8, {opacity:1, ease:pi2},'-=1.5')
+    .to('#cta', .5, {opacity:1, ease:pi2}, '-=1')
+    .to('#shimmer', .5, {left:150, ease:po2, onComplete:actionsButton})
+}
+
+function actionsButton(){
+    _btnExit.addEventListener('mouseover', function(){ TweenMax.to('#cta',.5,{backgroundColor:'#e8e8e8',ease:po2})});
+    _btnExit.addEventListener('mouseout', function(){ TweenMax.to('#cta',.5,{backgroundColor:'#fac705',ease:po2})});
+}

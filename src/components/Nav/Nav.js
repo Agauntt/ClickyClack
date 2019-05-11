@@ -1,12 +1,13 @@
 import React from "react";
+import "./Nav.css";
 
 // Component for the Navbar
 
 function Nav(props) {
   return (
     <nav className="navbar">
-      <div className="heading" style={headingStyle}>
-        <h3>Clicky Clack!</h3>
+      <div className="heading">
+        <h3 style={titleStyle}>Futurama Memory Game</h3>
         <p>
           {props.headingMessage} | Score: {props.currentScore} | Top Score: {props.topScore}{" "}
         </p>
@@ -15,9 +16,9 @@ function Nav(props) {
   );
 }
 
-const headingStyle = {
-  textAlign: "center",
-  background: "lightGrey"
+const titleStyle = {
+  marginTop: "0px",
+  paddingTop: "5px"
 };
 
 export default Nav;
