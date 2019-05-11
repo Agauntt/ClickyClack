@@ -45,9 +45,21 @@ class App extends Component {
     console.log(this.state.clicked);
     if (this.state.clicked.indexOf(id) === -1) {
       this.correct();
+      this.shuffle(cards);
     } else {
       this.incorrect();
     }
+  };
+
+  shuffle = a => {
+    var j, x, i;
+    for (i = a.length - 1; i > 0; i--) {
+      j = Math.floor(Math.random() * (i + 1));
+      x = a[i];
+      a[i] = a[j];
+      a[j] = x;
+    }
+    return a;
   };
 
   render() {
